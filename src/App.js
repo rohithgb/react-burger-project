@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div>
         <Layout>
-          Burger App
+          Burger
         </Layout>
       </div>
     );
