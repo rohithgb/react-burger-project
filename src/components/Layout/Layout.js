@@ -4,6 +4,7 @@ import Aux from '../../hoc/Aux';
 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 
+
 const layout = ( props ) => (
     <Aux>
         <Toolbar />
