@@ -4,16 +4,21 @@ import classes from './Toolbar.module.css';
 
 import Logo from '../../../components/Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
+import DrawToggle from '../SideDrawer/DrawToggle/DrawToggle';
 
 const toolbar = (props) =>(
     <header className={classes.Toolbar}>
-        <div>MENU</div>
+    
+        <DrawToggle toggled={props.toggleSideBar} />
+
         <div className={classes.Logo}>
-                <Logo/>
+            <Logo/>
         </div>
+
         <nav className={classes.DesktopOnly}>
             <NavigationItems />
         </nav>
+
     </header>
 );
 
